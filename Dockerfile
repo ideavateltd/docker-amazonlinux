@@ -6,3 +6,4 @@ RUN yum upgrade -y \
 
 # dumb-init
 RUN pip3 install dumb-init
+RUN ln -s /usr/local/bin/dumb-init /usr/bin/dumb-init
