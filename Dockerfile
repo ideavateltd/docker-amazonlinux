@@ -8,10 +8,6 @@ RUN yum install -y yum-utils \
 # Install git
 RUN yum install -y git
 
-# Install yarn
-RUN curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo \
- && yum install -y yarn
-
 # Install sudo
 RUN yum install -y sudo
 
