@@ -1,5 +1,4 @@
-FROM amazonlinux:2
+FROM ideavate/amazonlinux:2
 
-# install basic tools
-RUN yum upgrade -y && \
-    yum install -y shadow-utils patch make gcc gcc-c++
+RUN yum install -y python3-pip
+RUN pip3 install awsebcli awscli --upgrade
