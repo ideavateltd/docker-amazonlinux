@@ -2,10 +2,8 @@ FROM ideavate/amazonlinux:2
 
 RUN yum update -y
 
-# Install docker-cli
-RUN yum install -y yum-utils \
- && yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo \
- && yum install -y docker-ce-cli
+# Install docker
+RUN amazon-linux-extras install -y docker
 
 # Install git
 RUN yum install -y git
